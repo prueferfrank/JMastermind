@@ -2,6 +2,7 @@ package de.frankp.game;
 
 import java.awt.Color;
 
+// neuer Kommentar
 public enum MastermindColor {
 	RED(Color.RED), //
 	GREEN(Color.GREEN), //
