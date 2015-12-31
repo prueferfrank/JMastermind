@@ -22,5 +22,19 @@ public class MastermindTest {
 		assertEquals(4, gr.getCorrectColors());
 		assertEquals(0, gr.getCorrectPositions());	
 	}
+	
+	@Test
+	public void test2() {
+		
+		MastermindColor[] testGame = new MastermindColor[]{RED, GREEN,BLUE, YELLOW };
+		
+		Mastermind testee = new Mastermind();
+		
+		Guess guess = new Guess(new MastermindColor[]{ GREEN,GREEN,GREEN,GREEN});
+		GuessResult gr = testee.evaluateGuess(guess, testGame);
+		
+		assertEquals(4, gr.getCorrectColors());
+		assertEquals(1, gr.getCorrectPositions());	
+	}
 
 }
